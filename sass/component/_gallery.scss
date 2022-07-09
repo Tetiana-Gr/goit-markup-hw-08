@@ -1,4 +1,9 @@
 .gallery {
+  @media screen and (max-width: 768px) {
+    display: none;    
+  }
+}
+.gallery {
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -19,13 +24,15 @@
     flex-wrap: wrap;
   }
     &__img {
+    display: block;
     position: relative;
+    height: auto;
   }
     &__icon {
     position: absolute;
     bottom: 0;
     display: flex;
-    width: 370px;
+    width: 100%;
     height: 70px;
     border-radius: 4px;
     justify-content: center;

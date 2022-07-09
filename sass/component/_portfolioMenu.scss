@@ -1,13 +1,24 @@
 .portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 .menu {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+  
 
     &__button {
     flex-basis: calc(100% / 5 - 30px);
@@ -15,6 +26,11 @@
   }
     &__nav {
     margin-right: 8px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 1200px){
+      margin-bottom: 0px;
+    }
+
 
       &:nth-child(5n) {
       margin-right: 0px;
