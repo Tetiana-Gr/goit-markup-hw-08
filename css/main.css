@@ -444,9 +444,19 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fonmob.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fonmob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fontab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fontab-2x.jpg);
   }
 }
 .article {
@@ -921,8 +931,49 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer__tablet {
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__adressList {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socList {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer__form {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button__subscribe {
+    margin-left: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__email {
+    margin: 0;
+    width: 358px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    margin: 0;
   }
 }
 .backdrop {
