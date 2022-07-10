@@ -33,13 +33,53 @@
             <ul class="contact list">
                 <li class="contact__nav"><a class="contact__link link" href="mailto:info@devstudio.com">
                     <svg class="contact__icon" width="16" height="12">
-                            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                        <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
                         </svg>info@devstudio.com</a></li>
                 <li class="contact__nav"><a class="contact__link link" href="tel:+380961111111">
                     <svg class="contact__icon" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                        <use href="./images/symbol-defs.svg#icon-Vector"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="menu-open-btn">
+                <svg class="mobile-open-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>   
+        </div>
+        	<div class="mob-menu is-hidden">
+				<div class="container">
+					<div class="mob-menu-top">
+						<button type="button" class="menu-close-btn">
+							<svg class="mobile-close-icon" width="40" height="40">
+								<use href="./images/symbol-defs.svg#icon-close_40px"></use>
+							</svg>
+					</button>
+							<ul class="mob-menu-list list">
+								<li class="mob-menu-item  "><a class="link current mob-link " target="_blank" href="./index.html" > Студия</a> </li>
+								<li class="mob-menu-item "><a class="link mob-link   " target="_blank" href="./portfolio.html" >Портфолио</a></li>			
+								<li class="mob-menu-item"><a class="link mob-link " target="_blank" href="" >Контакты</a></li>
+							</ul>
+					</div> 
+					<div class="mob-menu-bottom">
+						<div class="mob-connect">
+							<ul class="mob-connect-list list">
+                                <li class="mob-connect-item">
+                                    <a class="mob-connect-link-phone tel link " href="tel:+380961111111">
+                                        +38 096 111 11 11</a></li>
+                                <li class="mob-connect-item">
+                                    <a class="mob-connect-link-email mail link " href="mailto:info@devstudio.com">
+                                        info@devstudio.com</a></li>
+							</ul>
+                            <ul class="mob-soc-list list">
+                                <li class="mob-soc-item">Instagram</li>
+                                <li class="mob-soc-item">Twitter</li>
+                                <li class="mob-soc-item ">Facebook</li>
+                                <li class="mob-soc-item ">LinkedIn</li>
+                            </ul>	
+						</div>
+					</div>	
+				</div>
+			</div>
         </div>
     </header>
     <main>
@@ -204,7 +244,8 @@
     </main>
 <footer class="footer">
     <div class="container">
-            <address>
+        <div class="footer__top">
+            <address class="footer__address">
                 <a class="logo link" href="/index.html"><span class="logo__text1">Web</span><span class="logo__text2 footer--color">Studio</span></a>
                 <ul class="footer__list list">
                     <li class="footer__contacts">
@@ -221,11 +262,16 @@
         <div>
             <p class="footer__text">присоединяйтесь</p>
             <ul class="socials__list list">
-                <li class="socials__item"><a href="" class="socials__link socials__link--color link"><svg class="socials__icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link socials__link--color link"><svg class="socials__icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link socials__link--color link"><svg class="socials__icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link socials__link--color link"><svg class="socials__icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
-            </ul>
+                <li class="socials__item"><a href="" class="socials__link socials__link--color link">
+                    <svg class="socials__icon socials__icon--color" width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                <li class="socials__item"><a href="" class="socials__link socials__link--color link">
+                    <svg class="socials__icon socials__icon--color" width="20" height="20"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                <li class="socials__item"><a href="" class="socials__link socials__link--color link">
+                    <svg class="socials__icon socials__icon--color" width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                <li class="socials__item"><a href="" class="socials__link socials__link--color link">
+                    <svg class="socials__icon socials__icon--color" width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+              </ul>
+            </div>
         </div>
         <div>
         <p class="footer__text">Подпишитесь на рассылку</p>
@@ -240,5 +286,6 @@
     </div>
     </div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

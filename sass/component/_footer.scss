@@ -1,9 +1,3 @@
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -39,9 +33,18 @@
     align-items: center;
   }
 }
-.footer .logo {
+ .logo__footer {
   display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
+
 .footer__link {
   font-style: normal;
   font-weight: 400;
@@ -132,63 +135,43 @@
 .socials__list {
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .footer .container {
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-} 
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__form {
     display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__email {
+  .footer .container{
+   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socList {
     display: flex;
-    width: 358px;
   }
 }
+@media screen and (min-width: 480px) {
+  .logo__footer {
+    margin: 0;
+  }
+}
+// @media screen and (min-width: 1200px) {
+//   .footer__adressList {
+//     align-items: ;
+//   }
+// }
+
 @media screen and (min-width: 1200px) {
-  .footer__list {
-    text-align: start;
-    margin-right: 70px;
-  }
-}
-@media screen and (min-width: 1200px) {
-    .footer .logo {
-     padding: 0px;
-    }
-  }
- @media screen and (min-width: 1200px) {
-    .footer .logo {
-     padding: 0px;
-    }
-  }
-   @media screen and (min-width: 1200px) {
-    .button__subscribe {
-     margin-left: 10px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-  .footer__email {
-  margin-bottom: 0px; 
-  }
-}
-  @media screen and (min-width: 768px) {
-  .footer__top {
-  display: flex; 
-  }
-}
- @media screen and (min-width: 768px) {
-    .footer .logo {
-     padding: 0px;
-     text-align: center;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-  .footer__text {
-  text-align: start;
+  .footer__form {
+    display: inline-block;
   }
 }

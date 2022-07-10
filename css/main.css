@@ -97,11 +97,6 @@ img {
   padding-bottom: 25px;
   margin-right: 80px;
 }
-@media screen and (min-width: 1200x) {
-  .logo {
-    margin-right: 93px;
-  }
-}
 
 .logo__text1 {
   font-family: "Raleway";
@@ -387,6 +382,11 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon2x.jpg);
+  }
+}
 
 .hero_btn {
   margin: 30px auto 0;
@@ -437,6 +437,16 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
     width: 696px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fonmob.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fontab.jpg);
   }
 }
 .article {
@@ -751,12 +761,6 @@ img {
     padding-bottom: 94px;
   }
 }
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -790,8 +794,16 @@ img {
   align-items: center;
 }
 
-.footer .logo {
+.logo__footer {
   display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .footer__link {
@@ -879,64 +891,38 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer .container {
-    flex-direction: row;
+    display: flex;
     align-items: baseline;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer__socList {
+    display: flex;
+  }
+}
+@media screen and (min-width: 480px) {
+  .logo__footer {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer__form {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__email {
-    display: flex;
-    width: 358px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__list {
-    text-align: start;
-    margin-right: 70px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer .logo {
-    padding: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer .logo {
-    padding: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .button__subscribe {
-    margin-left: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__email {
-    margin-bottom: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__top {
-    display: flex;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer .logo {
-    padding: 0px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__text {
-    text-align: start;
+    display: inline-block;
   }
 }
 .backdrop {
