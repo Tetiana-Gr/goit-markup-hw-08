@@ -988,6 +988,12 @@ img {
 @media screen and (min-width: 1200px) {
   .logo__footer {
     margin-bottom: 20px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    text-align: start;
   }
 }
 .backdrop {
