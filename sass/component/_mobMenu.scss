@@ -57,10 +57,14 @@
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  // color: var(--main-title-color);
+}
+.mob-menu-item .mob-link {
   color: var(--main-title-color);
 }
-.mob-menu-item .mob-link:hover {
-  color: var(--aсcent-color);
+.mob-menu-item .mob-link:hover,
+.mob-menu-item .mob-link:focus {
+  color:#2196F3;
 }
 
 .mob-menu-item:not(:last-child) {

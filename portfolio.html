@@ -55,9 +55,9 @@
 							</svg>
 					</button>
 							<ul class="mob-menu-list list">
-								<li class="mob-menu-item  "><a class="link current mob-link " target="_blank" href="./index.html" > Студия</a> </li>
-								<li class="mob-menu-item "><a class="link mob-link   " target="_blank" href="./portfolio.html" >Портфолио</a></li>			
-								<li class="mob-menu-item"><a class="link mob-link " target="_blank" href="" >Контакты</a></li>
+								<li class="mob-menu-item  "><a class="link mob-link" href="./index.html" > Студия</a> </li>
+								<li class="mob-menu-item "><a class="link current mob-link" href="./portfolio.html" >Портфолио</a></li>			
+								<li class="mob-menu-item"><a class="link mob-link" target="_blank" href="" >Контакты</a></li>
 							</ul>
 					</div> 
 					<div class="mob-menu-bottom">
@@ -80,7 +80,6 @@
 					</div>	
 				</div>
 			</div>
-        </div>
     </header>
     <main>
         <h1 class="visually-hidden">Портфолио</h1>
@@ -97,10 +96,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/tehhokriak.jpg, ./images/tehhokriak-2x.jpg"
-                         src="./images/tehhokriak.jpg"
-                         alt="Веб-сайт Технокряк" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf1mob@1x.jpg 1x, ./images/portfolio/pf1mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf1des@1x.jpg 1x, ./images/portfolio/pf1des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf1tab@1x.jpg 1x, ./images/portfolio/pf1tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/tehhokriak.jpg" alt="Веб-сайт Технокряк" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -115,10 +116,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/neworlean.jpg, ./images/neworlean-2x.jpg" 
-                        src="./images/neworlean.jpg" 
-                        alt="Постер New Orlean vs Golden Star" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf2mob@1x.jpg 1x, ./images/portfolio/pf2mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf2des@1x.jpg 1x, ./images/portfolio/pf2des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf2tab@1x.jpg 1x, ./images/portfolio/pf2tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/neworlean.jpg" alt="Постер New Orlean vs Golden Star" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -133,10 +136,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/seafood.jpg, ./images/seafood-2x.jpg"
-                         src="./images/seafood.jpg" 
-                        alt="" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf3mob@1x.jpg 1x, ./images/portfolio/pf3mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf3des@1x.jpg 1x, ./images/portfolio/pf3des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf3tab@1x.jpg 1x, ./images/portfolio/pf3tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/seafood.jpg" alt="" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -151,10 +156,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/prime.jpg, ./images/prime-2x.jpg" 
-                        src="./images/prime.jpg" 
-                        alt="Ресторан Seafood" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf4mob@1x.jpg 1x, ./images/portfolio/pf4mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf4des@1x.jpg 1x, ./images/portfolio/pf4des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf4tab@1x.jpg 1x, ./images/portfolio/pf4tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/prime.jpg" alt="Ресторан Seafood" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -169,10 +176,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/boxes.jpg, ./images/boxes-2x.jpg"
-                         src="./images/boxes.jpg" 
-                        alt="Проект Boxes" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf5mob@1x.jpg 1x, ./images/portfolio/pf5mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf5des@1x.jpg 1x, ./images/portfolio/pf5des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf5tab@1x.jpg 1x, ./images/portfolio/pf5tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/boxes.jpg" alt="Проект Boxes" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -187,10 +196,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/inspiration.jpg, ./images/inspiration-2x.jpg"
-                         src="./images/inspiration.jpg" 
-                        alt="Inspiration has no Borders" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf6mob@1x.jpg 1x, ./images/portfolio/pf6mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf6des@1x.jpg 1x, ./images/portfolio/pf6des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf6tab@1x.jpg 1x, ./images/portfolio/pf6tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -205,10 +216,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/limited.jpg, ./images/limited-2x.jpg"
-                        src="./images/limited.jpg" 
-                        alt="Издание Limited Edition" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf7mob@1x.jpg 1x, ./images/portfolio/pf7mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf7des@1x.jpg 1x, ./images/portfolio/pf7des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf7tab@1x.jpg 1x, ./images/portfolio/pf7tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/limited.jpg" alt="Издание Limited Edition" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -223,10 +236,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/lab.jpg, ./images/lab-2x.jpg"
-                         src="./images/lab.jpg" 
-                        alt="Проект LAB" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf8mob@1x.jpg 1x, ./images/portfolio/pf8mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf8des@1x.jpg 1x, ./images/portfolio/pf8des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf8tab@1x.jpg 1x, ./images/portfolio/pf8tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/lab.jpg" alt="Проект LAB" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
@@ -241,10 +256,12 @@
                 <li class="project__item">
                     <a href="" class="project__link link">
                         <div class="project__box">
-                        <img class="project__picture"
-                        srcset="./images/growing.jpg, ./images/growing-2x.jpg"
-                         src="./images/growing.jpg" 
-                        alt="Growing Business" width="450" height="294">
+                            <picture>
+                                <source media="(min-width: 480px)" srcset="./images/portfolio/pf9mob@1x.jpg 1x, ./images/portfolio/pf9mob@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/pf9des@1x.jpg 1x, ./images/portfolio/pf9des@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="./images/portfolio/pf9tab@1x.jpg 1x, ./images/portfolio/pf9tab@2x.jpg 2x">
+                                <img class="project__picture" src="./images/growing.jpg" alt="Growing Business" width="450" height="294">
+                            </picture>
                          <p class="project__description">Ресурс предлагает комплексные предложения с разным уровнем
                               функционала и сервисов.
                               Все это позволит посетителю получить
