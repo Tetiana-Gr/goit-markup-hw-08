@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-title-color: #212121;
   --accent-color: #2196f3;
@@ -183,7 +182,7 @@ img {
 .menu-open-btn {
   display: block;
   margin-left: auto;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border: none;
 }
 
@@ -192,13 +191,13 @@ img {
   top: 12px;
   right: 25px;
   display: block;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border: none;
 }
 
 .menu-open-btn:hover,
 .menu-close-btn:hover {
-  fill: var(--aсcent-color);
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -211,7 +210,7 @@ img {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   width: 100vw;
   height: 100vh;
 }
@@ -234,11 +233,16 @@ img {
     display: none;
   }
 }
-.mob-menu-item {
+.currentLink {
+  color: var(--accent-color);
+}
+
+.mob-menu-list .mob-menu-item {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: var(--main-title-color);
 }
 
 .mob-menu-item .mob-link {
@@ -247,7 +251,7 @@ img {
 
 .mob-menu-item .mob-link:hover,
 .mob-menu-item .mob-link:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .mob-menu-item:not(:last-child) {
@@ -261,9 +265,9 @@ img {
 .mob-connect-link-phone {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.1764705882;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .mob-connect-link-email {
@@ -271,7 +275,7 @@ img {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-text-color);
 }
 
 .mob-soc-list {
@@ -280,9 +284,9 @@ img {
   margin-top: 64px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.2222222222;
+  line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .mob-soc-item:not(:last-child) {
