@@ -51,9 +51,6 @@
     display: none;
   }
 }
- .currentLink {
-  color: var(--accent-color);
-}
  .mob-menu-list .mob-menu-item {
   font-weight: 500;
   font-size: 40px;
@@ -61,11 +58,11 @@
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
- .mob-menu-item .mob-link {
+ .mob-link {
   color: var(--main-title-color);
 }
-.mob-menu-item .mob-link:hover,
-.mob-menu-item .mob-link:focus {
+.mob-link:hover,
+.mob-link:focus {
   color: var(--accent-color);
 }
 
@@ -113,4 +110,7 @@
    visibility: hidden;
    opacity: 0;
    pointer-events: none;
-  }
+}
+ .currentLink {
+  color: var(--accent-color);
+}
